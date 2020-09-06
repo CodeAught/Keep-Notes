@@ -1,0 +1,8 @@
+<notes-list
+    *ngIf="notes?.length"
+    [notes]="notes"
+    [actions]="false"
+></notes-list>
+<h2 *ngIf="!notes?.length">
+  No trash found!
+</h2>

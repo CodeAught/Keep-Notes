@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card>
+    <mat-card-content>
+      <div class="wrapper">
+        <input [(ngModel)]="title" matInput type="text" placeholder="Title" *ngIf="titleInput">
+      </div>
+      <div class="wrapper">
+        <input [(ngModel)]="desc" matInput type="text" placeholder="Take a note..." (focus)="onFocus()">
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button *ngIf="titleInput" mat-fab color="primary" (click)="onAdd()">Add</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
